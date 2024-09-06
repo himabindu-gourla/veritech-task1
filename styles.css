@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.team-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.company-header {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-header::after {
+    content: ''; 
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    width: 30%; 
+    border-bottom: 2px dotted #9c27b0; 
+    transform: translateX(-50%); 
+}
+
+
+.company-header h1 {
+    font-size: 32px;
+    color: #6a1b9a;
+}
+
+.company-header p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.team {
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 28px;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+.team-category {
+    margin-bottom: 40px;
+}
+
+.team-category h3 {
+    font-size: 24px;
+    color: #9c27b0;
+    margin-bottom: 15px;
+}
+
+.team-members {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.team-member img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.team-member p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.team-member p:last-child {
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+
+
+button{
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #9c27b0;
+    color: #fff;
+}
+
+
+.team-member img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.2); 
+}
